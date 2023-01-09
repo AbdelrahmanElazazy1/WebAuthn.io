@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-26T16:25:18Z" name="Default suite" finished-at="2022-12-26T16:25:18Z" duration-ms="179">
+  <suite started-at="2023-01-08T16:19:45 EET" name="Default suite" finished-at="2023-01-08T16:19:56 EET" duration-ms="11489">
     <groups>
     </groups>
-    <test started-at="2022-12-26T16:25:18Z" name="Default test" finished-at="2022-12-26T16:25:18Z" duration-ms="179">
-      <class name="Tests.HomePageTest">
-        <test-method is-config="true" signature="startdriver()[pri:0, instance:Tests.HomePageTest@75d3a5e0]" started-at="2022-12-26T16:25:16Z" name="startdriver" finished-at="2022-12-26T16:25:18Z" duration-ms="2375" status="PASS">
+    <test started-at="2023-01-08T16:19:45 EET" name="Default test" finished-at="2023-01-08T16:19:56 EET" duration-ms="11489">
+      <class name="Tests.VirtualAuthenticatorTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.VirtualAuthenticatorTest@15ff3e9e]" started-at="2023-01-08T16:19:45 EET" name="setup" finished-at="2023-01-08T16:19:49 EET" duration-ms="4128" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startdriver -->
-        <test-method signature="UserCanRigster()[pri:0, instance:Tests.HomePageTest@75d3a5e0]" started-at="2022-12-26T16:25:18Z" name="UserCanRigster" finished-at="2022-12-26T16:25:18Z" duration-ms="169" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="sampletest()[pri:0, instance:Tests.VirtualAuthenticatorTest@15ff3e9e]" started-at="2023-01-08T16:19:49 EET" name="sampletest" finished-at="2023-01-08T16:19:56 EET" duration-ms="7311" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserCanRigster -->
-        <test-method is-config="true" signature="stopdriver()[pri:0, instance:Tests.HomePageTest@75d3a5e0]" started-at="2022-12-26T16:25:18Z" name="stopdriver" finished-at="2022-12-26T16:25:18Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopdriver -->
-      </class> <!-- Tests.HomePageTest -->
+        </test-method> <!-- sampletest -->
+      </class> <!-- Tests.VirtualAuthenticatorTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

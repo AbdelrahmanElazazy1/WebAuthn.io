@@ -1,23 +1,41 @@
 package Tests;
 
-import java.util.concurrent.TimeUnit;
-
+import java.lang.reflect.Method;
+import java.util.Map;
+import org.openqa.selenium.virtualauthenticator.VirtualAuthenticator;
+import org.openqa.selenium.virtualauthenticator.HasVirtualAuthenticator;
+import org.openqa.selenium.virtualauthenticator.VirtualAuthenticator;
+import org.openqa.selenium.virtualauthenticator.VirtualAuthenticatorOptions;
+import org.openqa.selenium.remote.Command;
+import org.openqa.selenium.remote.CommandInfo;
+import org.openqa.selenium.remote.HttpCommandExecutor;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.SessionId;
+import org.openqa.selenium.remote.http.HttpMethod;
+import org.openqa.selenium.remote.service.DriverCommandExecutor;
 import org.testng.annotations.Test;
-
 import Pages.HomePage;
+
 
 public class HomePageTest extends TestBase{
 
-	
-	HomePage HomeObject;
-	
+
+	HomePage homeObject;
+
+
 	@Test
-	public void UserCanRigster()
-	
+	public void UserCanRegister() throws Exception
+
 	{
-		HomeObject = new HomePage(driver);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		HomeObject.ClickOnRegisterButton();
+		homeObject = new HomePage(driver);
+		homeObject.setupVirtualAuthenticator();
+		homeObject.ClickOnRegisterButton();
+		
 	}
+
+
 	
+
+
 }
+
